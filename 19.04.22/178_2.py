@@ -5,7 +5,7 @@ from time import time
 def count_multiples_of_three_not_five(numbers: Sequence[int]) -> int:
     """
     Return amount of numbers from sequence which are 
-    multiples of tree but not multiples of five
+    multiples of three but not multiples of five
     """
     count = 0
 
