@@ -14,9 +14,9 @@ def pythagorean_triples(n: int) -> List[tuple]:
 
     for a in domain:
         for b in domain:
-            c = (a ** 2 + b ** 2)
+            c = a**2 + b**2
             if c <= n_square:
-                if not c ** .5 % 1:
+                if not c**.5 % 1:
                     res.append((a, b, int(c**.5)))
 
     return res
