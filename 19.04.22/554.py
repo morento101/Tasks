@@ -4,7 +4,7 @@ from time import time
 
 def pythagorean_triples(n: int) -> List[tuple]:
     """
-    Returns list of tuples with all pythagorean triples triples which satisfy
+    Returns list of tuples with all pythagorean triples which satisfy
     following equations: a^2 + b^2 = c^2 and a <= b <= c <= n
     """
 
