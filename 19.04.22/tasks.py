@@ -22,7 +22,7 @@ def validate_sequence_input(func):
 
 def validate_int_input(func):
     def wrapper(*args, **kwargs):
-        error = TypeError(f'Invalid type, you can pass only int, float type values')
+        error = TypeError(f'Invalid type, you can pass only int and float type values')
         types = (int, float)
 
         for arg in args:
