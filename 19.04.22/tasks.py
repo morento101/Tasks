@@ -62,6 +62,9 @@ def count_square_multiples_two(numbers: Sequence[int]) -> int:
     count = 0
 
     for number in numbers:
+        if number < 0:
+            raise ValueError(f"Can't calculate square root from negative number {number}")
+
         number_root = number ** .5
         if not (number_root % 1) and not (number_root % 2):
             count += 1
