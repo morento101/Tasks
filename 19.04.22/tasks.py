@@ -5,7 +5,7 @@ from time import time
 
 def validate_sequence_input(func):
     def wrapper(*args, **kwargs):
-        error = TypeError(f'Invalid type, in {func.__name__} you can pass only sequences')
+        error = TypeError(f'Invalid type, you can pass only sequences')
         types = (list, tuple, set, range)
 
         for arg in args:
@@ -22,7 +22,7 @@ def validate_sequence_input(func):
 
 def validate_int_input(func):
     def wrapper(*args, **kwargs):
-        error = TypeError(f'Invalid type, in {func.__name__} you can pass only int, float type values')
+        error = TypeError(f'Invalid type, you can pass only int, float type values')
         types = (int, float)
 
         for arg in args:
